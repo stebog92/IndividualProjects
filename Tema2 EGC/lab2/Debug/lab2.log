@@ -1,0 +1,114 @@
+﻿Build started 11/20/2013 8:57:15 PM.
+     1>Project "C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\lab2\lab2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Idependente /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Framework\DrawingWindow.cpp Framework\Transform2D.cpp Framework\Transform3D.cpp Framework\Visual2D.cpp main.cpp
+         main.cpp
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object2d.h(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(18): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(37): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(42): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(55): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\circle2d.h(24): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\circle2d.h(48): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(218): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(219): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(223): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(228): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(229): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(233): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(238): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(239): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(316): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(317): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(333): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(337): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(347): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(377): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(387): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(410): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(417): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(427): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(453): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(472): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(494): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(516): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(522): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(524): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(543): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(549): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(551): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(573): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(592): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(593): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(596): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(597): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(629): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(631): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(652): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(653): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(684): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(686): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(703): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(704): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\main.cpp(727): warning C4305: 'argument' : truncation from 'double' to 'float'
+         Visual2D.cpp
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object2d.h(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(18): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(37): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(42): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(55): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\visual2d.cpp(87): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\visual2d.cpp(88): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\visual2d.cpp(89): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\visual2d.cpp(90): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         Transform3D.cpp
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(18): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(37): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(42): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(55): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\transform3d.cpp(361): warning C4018: '<' : signed/unsigned mismatch
+         Transform2D.cpp
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object2d.h(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\transform2d.cpp(144): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\transform2d.cpp(168): warning C4018: '<' : signed/unsigned mismatch
+         DrawingWindow.cpp
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object2d.h(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(18): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(37): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(42): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(55): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\object3d.h(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(116): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(122): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(132): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(146): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(211): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(217): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(227): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(237): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(241): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(257): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(467): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(485): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(501): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(518): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(535): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(552): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\stb\desktop\bogdan_stefan_333ca_tema2\lab2\framework\drawingwindow.cpp(570): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\Debug\Tema2.exe" /INCREMENTAL /NOLOGO /LIBPATH:dependente freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\Debug\Tema2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\Debug\Tema2.lib" /MACHINE:X86 Debug\DrawingWindow.obj
+         Debug\Transform2D.obj
+         Debug\Transform3D.obj
+         Debug\Visual2D.obj
+         Debug\main.obj
+         lab2.vcxproj -> C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\Debug\Tema2.exe
+     1>Done Building Project "C:\Users\stb\Desktop\Bogdan_Stefan_333CA_Tema2\lab2\lab2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.74
