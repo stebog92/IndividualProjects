@@ -1,0 +1,31 @@
+BOGDAN STEFAN 323CA - Aplicatie client pentru interogari DNS
+
+
+Arhiva contine fisierele: dns.c, dns_message.h, dns_servers.conf, Makefile si README.
+Fisierul dns_message contine structurile aferente componentelor mesajului DNS. Fisierul
+'dns.c' contine functia main(), precum si functiile de convertire in si din format
+DNS a unei adrese. Conectarea se face luand la rand adresele de servere din fisierul
+'dns_server.conf'. In cazul in care nu este nici o adresa buna, se afiseaza mesaj
+de instiintare. Dupa conectare, se completeaza mesajul query cu datele necesare si 
+se trimite serverului. Daca se primeste mesaj de la server, se afiseaza datele gene-
+rale ca numarul de intrebari, de raspunsuri, de autoritati si respectiv de inregis-
+trari aditionale, dupa care urmeaza afisarea rezultatelor. Problema a constat in
+faptul ca diferite tipuri au structuri de mesaje diferite. In ordine:
+	- tipul NS: s-a parcurs sirul de octeti, citind inclusiv octetii la care
+	exista referinta, datorita modului de compresie folosit in DNS; parcurgerea
+	s-a facut pana cand s-au citit toate datele; 
+	- tipul SOA: s-au citit pe rand cele 2 adrese din sirul de octeti, dupa care
+	s-au citit cele 5 numere pe 32 de biti;
+	- tipul MX: este un alt tip special, deoarece in structura sa, are inainte
+	de numele propriu-zis al serverului de mail, un intreg pe 2 octeti, care a
+	trebuit citit intr-un mod diferit de restul raspunsului;
+	- tipul TXT, care au raspunsuri de forma unui sir de caractere,
+	fara delimitator (un simplu string);
+	- tipurile CNAME si A intra la capitolul 'celelalte tipuri', deoarece acestea returnea-
+	za un raspuns de forma adresa ip.
+
+Celelalte tipuri din RFC1035 intra de asemenea la capitolul 'celelalte tipuri'.
+Am observat ca la apelarea programului 'dig' din Linux, tipul CNAME nu intoarece
+nimic in mod deosebit (se putea insa sa fie din cauza ca nu am gasit nici un server
+care sa returneze mesaj in acest sens). De aceea afisez si mesajele din RR'urile autoritar,
+ respectiv aditional.

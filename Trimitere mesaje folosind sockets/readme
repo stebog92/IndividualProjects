@@ -1,0 +1,51 @@
+
+
+	Bogdan Stefan 323CA - Tema 3 PC
+
+	Arhiva are 2 fisiere sursa: server.c, respectiv client.c . 
+	
+	Serverul va retine pentru fiecare client, numele, adresa, portul si portul 
+de hosting in vectori (consider port de hosting, portul prin care alti useri se vor
+conecta la client). Intre acesti vectori, legatura care exista este reprezentata de
+indici, indicele fiind socketul (am apelat la aceasta metoda si in cazul clientilor,
+cand functioneaza ca servere). Astfel, pentru un client conectat, datele sunt:
+	nume[socket], adrese[socket], porturi[socket], hostingport[socket].
+	Fiecare client va avea un hostingport diferit, primit ca parametru in linia de 
+comanda in momentul conectarii. Atat pentru server, cat si pentru clienti, am folosit,
+pe langa file-descriptorii corespunzatori socketilor, si file-descriptorul asociat
+citirii de la tastatura (utilizat in cazul comenzilor din consola). Serverul poate 
+primi de la tastatura comenzile status, kick si quit.
+	Dupa ce se conecteaza la server, clientul devine el insusi server pentru
+ceilalti useri, conectati si ei la randul lor la serverul principal. In momentul
+in care clientul x vrea sa se conecteze la clientul y, x verifica mai intai daca
+exista deja conexiune cu y cautand in vectorul de nume si in lista de descriptori.
+In caz contrar, va trebui sa se conecteze la y, insa va avea nevoie de adresa si 
+portul acestuia. Aceste informatii le va primi de la server, dupa care va putea trimite
+mesajul clientului y. Mesajul se scrie de la tastatura. Mesajele se trec intr-un vector
+de stringuri , care se afiseaza la apelarea comenzii history. 
+	Dupa ce se conecteaza la server, clientul trebuie sa trimita numele, iar apoi 
+portul pe care se pot conecta ceilalti clienti la el. Serverul va verifica si daca 
+mai exista un alt user cu acelasi nume clientul va fi deconectat. Cand vrea sa se 
+deconecteze, clientul va trimite mesaj de 'quit' atat serverului, cat si userilor
+cu care are conexiune, pentru care socketul sau sa fie scos din toate listele 'read_fs'.
+	Pe scurt, comenzile ce pot fi apelate in client sunt:
+- infoclients -> trimite si primeste de la server o lista cu toti clientii online
+- message nume_client
+mesaj_efectiv
+- info nume_client -> cere informatii despre client si le afiseaza
+- broadcast mesaj -> Pentru aceasta comanda m-am gandit astfel : apelez infoclients si
+primesc numele tuturor utilizatorilor online. Pentru fiecare utilizator online, verific
+daca a fost deschisa deja o conexiune catre clientul respectiv . In caz pozitiv, pur si 
+simplu trimitem mesajul si trecem la urmatorul client online. In caz contrar, cream o noua
+conexiune , la fel ca in cazul in care apelam message, iar apoi trimitem mesajul.
+- history -> afiseaza vectorul de stringuri cu mesajele primite de la pornirea sa
+- quit
+	De asemenea, comenzile ce pot fi apelate in server sunt:
+- status -> afiseaza clientii ce sunt online, ip`ul de pe care sunt conectati si portul pe 
+care acestia asculta
+- kick nume_client -> serverul trimite catre client mesajul "finish", iar acesta se comporta
+ca si cum ar fi primit "quit" de la tastatura.
+- quit -> serverul trimite tuturor clientilor activi mesajul "finish", iar dupa aceea se inchide.
+	Programul respecta toate regulile si comenzile impuse in cerinta. 
+Utilizatorul este de fiecare data instiintat de evenimentele care se petrec.
+Serverul va arata de fiecare data clientii care se (de)conecteaza.

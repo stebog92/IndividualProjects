@@ -1,0 +1,15 @@
+Bogdan Stefan 323 CA
+
+Task 0
+
+	La acest task , pur si simplu am incarcat prima oara fereastra , iar mereu cand primeam confirmare ca un cadru a ajuns cu scucces la receiver, glisam fereastra si adaugam un cadru nou.
+
+Task 1
+
+	La acest task , am incarcat si trimis fereastra pe care o memoram un buffer[dimFereastra]. Dupa aceea, cat timp nu erau trimise si confirmate toate cadrele astept mesaj de confirmare, iar daca acesta nu ajungea , retrimiteam toata fereastra (sau in cazul in care eram la sfarsit si mai aveam de trimis mai putine cadre , cat ramasese in fereastra). Cand un mesaj era confirmat , glisam fereastra si daca fisierul de intrare nu era inca gol mai adaugam un cadru in fereastra . Conditiile de iesire din while erau : fisierul de intrare sa fie gol si dimensiunea ferestrei sa fi ajuns la 0 . Dimensiunea ferestrei scadea atunci cand primeam confirmarea unui mesaj trimis si nu mai aveam de citit din fisier.
+
+Task 2
+
+	La receiver, am folosit o fereastra(vector de msg) in care adaugam cadrele primite . De asemenea , am folosit si vectorul confirmat pentru a nota ce cadru am primit din fereastra . De fiecare data plecam de la primul cadru pana cand gaseam un cadru neconfirmat si scriam cadrele confirmate in fisier, eliminandu-le din fereastra. Dupa aceea , aveam grija sa deplasez fereastra corespunzator. Din receiver se iesea atunci cand nu mai primeam niciun cadru. O greseala pe care am facut-o si de aceea am intarziat cu trimiterea temei este ca atunci cand in receiver scriam toata fereastra , lastPoz era dimFereastra - 1 si nu intra in for-ul in care eliberam fereastra deloc . Pentru aceasta , am rezolvat cu if (lastPoz + 1 == dimFereastra) si am eliberat toata fereastra.
+
+	La sender , am trimis mai intai numele fisierului , apoi dimensiunea ferestrei si dupa am trimis prima fereastra. In cazul in care nu se umplea fereastra setam dimensiunea ferestrei corespunzatoare (pentru fisierele de dimensiune mica) deoarece altfel , desi imi scria fisierul de iesire bine, nu se termina senderu. Aceeasi greseala o facusem si la TASK 1. Cand nu primeam confirmare deoarece cadrul se pierduse pe drum , retrimiteam din fereastra cadrele ce nu fusesera confirmate de catre receiver. Dupa aceea am verificat ce cadru a fost confirmat , am eliminat cadrele ce au ajuns la destinatie cu succes si au fost confirmate de catre receiver(cand era confirmat un ack mai mare , eliminam din buffer toate cadrele cu ack mai mic sau egal cu acesta). Dupa toate acestea , umpleam bufferul , citind din fisier . Cand nu se mai putea citi din fisier , tineam minte ca fisierul s-a golit si scadeam dimensiunea ferestrei cu cat era necesar . Din while se iesea atunci cand dimensiunea ferestrei era 0 si fisierul era gol (emptyFile = 1).
