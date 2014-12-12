@@ -1,0 +1,27 @@
+/*
+	Bogdan Stefan 333CA 
+	Tema 3 APD - Calcul paralel folosind MPI
+*/
+
+	Mai intai voi prezenta functiile pe care a trebuit sa mi le creez pentru realizarea acestei teme:
+
+int **creareMatrix 	- functie ce aloca memorie pentru o matrice
+void distrugeMatrix - functie ce elibereaza memoria unei matrici
+void scriereFisier	- functie ce face efectiv scrierea in fisier, asa cum este explicata in enunt
+
+	Prea multe nu sunt de spuns. Dupa ce am facut citirea din fisier(pe procesul cu rank = 0), am ales
+sa trimit datele catre celelalte procese cu MPI_Bcast. Dupa aceea, ficare proces urmeaza sa isi calculeze
+numarul de pixeli pe care trebuie sa ii prelucreze, si pozitia de start in matricea ce va fi afisata si 
+matricea valorilor. Apoi, in functie de tipul multimii ce trebuie calculate, avem doua while-uri in urma
+carora in vectorul results vom avea rezultatele pe care le-a calculat procesul curent. 
+	Urmatorul pas consta in trimiterea tuturor datelor catre procesul master, pentru ca acesta sa le scrie
+in fisier. Pentru aceasta am folosit MPI_Send si MPI_Recv, desi metoda eleganta ar fi fost cu gather. Nu am 
+facut insa cu gather deoarece initial am crezut ca nu pot trimite deodata un vector alocat dinamic, iar dupa
+ce m-am mai documentat si am inteles ca se poate, deja scrisesem aceasta varianta a temei, iar fiind in
+intarziere am ales sa las asa. Fiecare proces care are rank-ul diferit de 0 trimite catre master cati pixeli 
+a prelucrat, pozitia de start, iar apoi valorile efective. Masterul, pentru fiecare proces primeste aceste
+valori si le scrie in matrice, matrice ce urmeaza a fi scrisa in fisier. La scrierea in matrice, am avut grija
+sa incepem de la ultima linie si sa terminam cu prima. Cam asta este tot de zis, tema neavand un nivel de
+dificultate prea ridicat.
+
+	Scuze de intarziere, dar in aceasta perioada am avut mai multe teme si m-am decalat cu unele din ele.
